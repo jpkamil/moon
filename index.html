@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Moon Phases</title>
+<meta name="description" content="Moon phases for today, the coming days, any month and any year. Free, no ads, works offline.">
+<meta name="theme-color" content="#0b1020">
+<meta name="color-scheme" content="dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Moon">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sky" aria-hidden="true"></div>
+
+<header class="top">
+  <h1 class="brand"><span class="brand-glyph" id="brandGlyph" aria-hidden="true"></span> Moon Phases</h1>
+  <nav class="tabs" role="tablist" aria-label="Views">
+    <button class="tab" role="tab" data-view="today" aria-selected="true">Today</button>
+    <button class="tab" role="tab" data-view="days">Days</button>
+    <button class="tab" role="tab" data-view="month">Month</button>
+    <button class="tab" role="tab" data-view="year">Year</button>
+  </nav>
+  <div class="controls">
+    <button class="btn icon" id="prevBtn" aria-label="Previous">&#8249;</button>
+    <button class="btn" id="todayBtn">Today</button>
+    <label class="datewrap"><span class="sr-only">Jump to date</span><input type="date" id="dateInput" min="1900-01-01" max="2200-12-31"></label>
+    <button class="btn icon" id="nextBtn" aria-label="Next">&#8250;</button>
+  </div>
+  <button class="btn hemi" id="hemiBtn" title="Switch hemisphere (flips which side is lit)">N</button>
+</header>
+
+<main id="main">
+  <section id="view-today" class="view" data-view="today"></section>
+  <section id="view-days" class="view" data-view="days" hidden></section>
+  <section id="view-month" class="view" data-view="month" hidden></section>
+  <section id="view-year" class="view" data-view="year" hidden></section>
+</main>
+
+<footer class="foot">
+  <span id="tzNote"></span>
+  <span class="dot">·</span>
+  <span>Computed on your device from Meeus, <em>Astronomical Algorithms</em>. No tracking, no ads.</span>
+  <span class="dot">·</span>
+  <button class="linklike" id="installHint" hidden>Add to Home Screen</button>
+</footer>
+
+<script src="moon.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

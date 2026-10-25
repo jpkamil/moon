@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="20%" r="100%"><stop offset="0" stop-color="#1c2650"/><stop offset="1" stop-color="#0b1020"/></radialGradient>
+    <radialGradient id="lit" cx="35%" cy="32%" r="80%"><stop offset="0" stop-color="#fbf8ee"/><stop offset=".7" stop-color="#eee8d6"/><stop offset="1" stop-color="#d9d2bb"/></radialGradient>
+    <clipPath id="c"><path d="M256,66 A190,190 0 0 1 256,446 A120,190 0 0 1 256,66 Z"/></clipPath>
+  </defs>
+  <rect width="512" height="512" rx="110" fill="url(#bg)"/>
+  <circle cx="110" cy="120" r="2.5" fill="#fff" opacity=".8"/><circle cx="400" cy="90" r="2" fill="#fff" opacity=".7"/><circle cx="430" cy="380" r="2.5" fill="#fff" opacity=".6"/><circle cx="80" cy="400" r="2" fill="#fff" opacity=".7"/>
+  <circle cx="256" cy="256" r="190" fill="#171c33"/>
+  <g clip-path="url(#c)">
+    <circle cx="256" cy="256" r="190" fill="url(#lit)"/>
+    <g fill="rgba(70,80,105,.22)">
+      <ellipse cx="167" cy="246" rx="55" ry="83" transform="rotate(-10 167 246)"/><ellipse cx="212" cy="177" rx="51" ry="43"/><ellipse cx="292" cy="181" rx="34" ry="32"/>
+      <ellipse cx="331" cy="236" rx="40" ry="34" transform="rotate(30 331 236)"/><ellipse cx="390" cy="206" rx="24" ry="20"/><ellipse cx="365" cy="292" rx="26" ry="36"/>
+      <ellipse cx="325" cy="300" rx="20" ry="20"/><ellipse cx="206" cy="311" rx="36" ry="28"/><ellipse cx="161" cy="325" rx="22" ry="20"/>
+    </g>
+  </g>
+</svg>
